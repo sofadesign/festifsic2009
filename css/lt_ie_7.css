@@ -1,0 +1,15 @@
+/**
+ * FOR IE6
+ */
+body {
+   background: transparent url(img/bg_body.png) no-repeat top left;
+	} 
+#nav {
+   position: absolute;
+   padding-top: 4px;
+   } 
+#content{}
+   .annonce, .annonce2, .annonce3 {
+      zoom:1;
+      }
+		

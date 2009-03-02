@@ -1,0 +1,357 @@
+/**
+ * meyer's RESET 
+ * ===========================================================================
+ * http://meyerweb.com/eric/tools/css/reset/index.html 
+ *
+ * v1.0 | 20080212
+ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+body { line-height: 1; }
+ol, ul { list-style: none; }
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/* remember to define focus styles! */
+:focus { outline: 0; }
+
+/* remember to highlight inserts somehow! */
+ins { text-decoration: none; }
+del { text-decoration: line-through; }
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/**
+ * SD additionnal resets
+ */
+a img { border: none; }
+address { font-style: normal;}
+
+/**
+ * LAYOUT
+ * ===========================================================================
+ *
+ * == STRUCTURE: =============================================================
+ *  * Page width:            950 px
+ *  * Number of columns:     24
+ *  * Column width:          30 px
+ *  * Margin gutter width:   10 px
+ *  * Line height:           18 px
+ * ===========================================================================
+ * 
+ * By default, the grid is 950px wide, with 24 columns 
+ * spanning 30px, and a 10px margin between columns.
+ *
+ */
+
+html {
+	background: #80cef5 url(img/bg_html.png) repeat-x;
+	/*background-attachment: fixed;*/
+	}
+	body {
+	   background: transparent url(img/bg_body-trans.png) no-repeat 16px 230px;
+	   background-attachment: fixed;
+	   padding-bottom: 100px;
+		}
+		#access-nav {
+		   position: absolute;
+		   }
+		   #access-nav li  {
+		      text-indent: -9999px;
+		      }
+		#content, #footer {
+		   position: relative;
+		   left: 375px;
+		   width: 550px;
+		   top: 36px;
+		   }
+		#nav {
+		   position: fixed;
+		   width: 345px;
+		   top: 180px;
+		   }
+		#content {
+		   padding: 36px 0;
+		   background-color: white;
+		   min-height: 650px;
+		   }
+		#footer {
+		   		   }
+
+
+/**
+ * css/screen
+ * ===========================================================================
+ *
+ * ---------------------------------------------------------------------------
+ * (c) Copyright 2009 Sofa Design / Vincent Hélye 
+ * All rights reserved.
+ * ---------------------------------------------------------------------------
+ *
+ *
+ * ===========================================================================
+ * 
+ * Base font size is set to 12 px (0.75 * 16px = 12px)
+ * 
+ * == FONT SIZE conversion table: ============================================
+ *  *  9 px  <->  75%
+ *  * 10 px  <->  83,34%
+ *  * 11 px  <->  91.67%   
+ *  * 12 px  <->  100%     # Base font
+ *  * 13 px  <->  108.34%  
+ *  * 14 px  <->  116.67%  
+ *  * 18 px  <->  150%
+ *  * 20 px  <->  166.67%  
+ *  * 21 px  <->  175%     
+ *  * 22 px  <->  183.34%  
+ *  * 28 px  <->  233.34%  
+ * ===========================================================================
+ *
+ * == Line-height: ===========================================================
+ *  * 1.5 (18px) for 12px (100%, Base font)
+ *  * 1.385 (18px) for 13px (108,34%)
+ *
+ * ===========================================================================
+ *
+ */
+
+
+/* -------------------------------------------------------------------------- */
+
+body  { 
+  	font: 75%/1.5 'Trebuchet MS', Helvetica, sans-serif;
+  	color: #1b1b01;
+	}
+	a, a:hover, a:visited {
+		color: #009cec;
+		}
+	a:hover {
+		text-decoration:none;
+		}
+	#nav {
+		font-family: 'Arial Black', Gadget, sans-serif;
+		text-align: right;
+		}
+		#nav li {
+		   margin-bottom: 18px;
+		   }
+		#nav a {
+			text-transform: uppercase;
+			text-decoration: none;
+			color: #fff;
+			background-color: #009cec;
+			padding: 4px 10px;
+			}
+		#nav a:hover,
+	   body.accueil #n-accueil a,
+	   body.programmation #n-programmation a,
+	   body.billetterie-et-infos #n-billetterie-et-infos a,
+	   body.partenaires #n-partenaires a
+	    {background-color: #1b1b01;}
+	#content {
+	   }
+	   .sprite {
+	      text-indent: -9999px;
+		   overflow: hidden;
+	      }
+	   h1, h2.subtitle, .section {
+		   margin: 18px 36px;
+		   }
+		h1 {
+		   width: 459px;
+		   height: 73px;
+		   background: transparent url(img/bg_h1.png) no-repeat 0 0;
+		   }
+		h2.subtitle {
+		   height: 18px;
+		   margin: 36px 36px 18px 36px;
+		   }
+		h3 {
+		   display: inline;
+         padding: 2px 18px 2px 8px;
+         line-height: 32px;
+		   font-family: 'Arial Black', Gadget, sans-serif;
+         text-transform: uppercase;
+         background-color: #999;
+         color: #fff;
+         height: 24px;
+         margin-top: 18px;
+         margin-bottom: 4px;
+		   }
+		h3.sprite {
+		   display: block;
+		   height: 18px;
+		   margin-top: 36px;
+		   margin-right: -36px;
+		   padding: 0;
+		   }
+		.annonce {
+	      background-color: #1b1b01;
+	      color: #dfffff;
+	      font-size: 16px;
+	      line-height: 18px;
+	      font-weight: bold;
+	      padding: 18px 16px;
+	      }
+	   .annonce2 {
+	      font-size:  13px;
+	      line-height: 18px;
+	      background: transparent url(img/stripe_blue.png);
+	      padding: 18px 16px 1px 16px;
+	      margin-top: 0;
+	      }
+	      .annonce2 p {
+	         margin-bottom: 18px;
+	         }
+	   .annonce3 {
+	      background-color: #1b86e8;
+	      padding: 18px 16px 1px 16px;
+	      font-size: 13px;
+	      line-height: 18px;
+	      margin-top: 0;
+	      }
+	      .annonce3 a {
+	         color:  #fff;
+	         }
+	      .annonce3 p, .annonce3 ul {
+	         margin-bottom: 18px;
+	         color: #fff;
+	         font-weight: bold;
+	         }
+		#a-l-affiche{}
+		   #a-l-affiche #groupes {
+		      margin-top: 43px;
+		   	width: 452px;
+		      background: transparent url(img/sprites_accueil.png) no-repeat;
+		      height: 195px;
+		      }
+		   #a-l-affiche #lieu-et-date {
+		      width: 452px;
+		      background: transparent url(img/sprites_accueil.png) no-repeat 0 -195px;
+		      height: 28px;
+            }
+         #a-l-affiche #photos {
+            margin-top: 30px;
+            }
+      #evenement {}
+         #evenement h2 {
+            font-family: 'Arial Black', Gadget, sans-serif;
+            font-size: 150%;
+            text-transform: uppercase;
+            background-color: #fff200;
+            width: 157px;
+            height: 28px;
+            line-height: 28px;
+            padding-left: 13px;
+            margin-bottom: 4px;
+            }
+         #evenement .sprite {
+            width: 480px;
+            height: 128px;
+            background: transparent url(img/sprites_accueil.png) no-repeat 0 -223px;
+            }
+         #evenement .conditions{
+            line-height: 14px;
+            margin-top: 16px;
+            font-style: italic;
+            color:  #666;
+            }
+            #evenement #conditions sup {
+               font-size: 16px;
+               font-weight: bold;
+               font-style: normal;
+               }
+      body.programmation h2.subtitle {
+		   background: transparent url(img/sprites_programmation.png) no-repeat 0 0;
+		   }
+		body.programmation .section p {
+		   margin: 18px 0;
+		   }
+		body.programmation h3 {
+		   background: transparent url(img/sprites_programmation.png) no-repeat 0 0;
+		   }
+		body.programmation .clawhammers h3 {
+		   background-position: 0 -54px;
+		   }
+		body.programmation .java h3 {
+		   background-position: 0 -72px;
+		   }
+		body.programmation .iamunchien h3 {
+		   background-position: 0 -90px;
+		   }
+		#tarifs{}
+		   #tarifs strong {color: #fff200;}
+		   #tarifs .annonce{color: #fff;}
+		   #tarifs .conditions{
+		      font-size: 13px;
+		      font-weight: normal;
+		      }
+		body.billetterie-et-infos h2.subtitle {
+		   background: transparent url(img/sprites.png) no-repeat 0 0;
+		   }
+		body.partenaires h2.subtitle {
+		   background: transparent url(img/sprites.png) no-repeat 0 -18px;
+		   }
+		body.contacts h2.subtitle {
+		   background: transparent url(img/sprites.png) no-repeat 0 -36px;
+		   }
+		body.partenaires .section h4 {
+		   margin-top: 18px;
+		   }
+		   
+		   body.partenaires .logos {
+		      width: 480px;
+		      overflow: hidden;
+		      border-bottom: 2px dotted #1b86e8;
+		      padding-bottom: 18px;
+		      }
+		   body.partenaires .logos.last {
+		      border-bottom: 0;
+		      padding-bottom: 0;
+		      }
+		      body.partenaires .logos img {
+		         margin: 0;
+		         margin-right: 0;
+		         border: 0;
+		         line-height: 0;
+		         float: left;
+		         }
+		      
+	#footer{
+	   text-align: center;
+	   padding-top: 1em;
+	   font-weight: bold;
+	   color: #333;
+	   }
+	   .credits {
+	      font-size:  11px;
+	      color: #666;
+	      }
+	    
+	    
+	    
+	    
+	    
